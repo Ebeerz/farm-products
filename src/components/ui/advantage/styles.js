@@ -1,4 +1,7 @@
-.advantage {
+import styled from "styled-components";
+import { P } from '../../styled';
+
+export const StyledAdvantage = styled.div`
     display: grid;
     box-sizing: border-box;
     grid-template-areas:
@@ -12,13 +15,16 @@
     min-height: 197px;
     margin: 0;
     padding: 20px;
-  }
-  
-  .advantage__img {
+    /* background-color: #E1EDCE; */
+    background-color: ${(props) => props.$bgColor};
+    
+`
+
+export const AdvantageImg = styled.img`
     grid-area: img;
-  }
-  
-  .advantage__type {
+`
+
+export const AdvantageType = styled.span`
     grid-area: type;
     display: inline-block;
     width: fit-content;
@@ -26,16 +32,15 @@
     padding: 0px 10px 0px 10px;
     color: #fff;
     font-size: 14px;
-  }
-  
-  .advantage__name {
+    background-color: ${(props) => props.$bgColor};
+`
+export const AdvantageName = styled.span`
     grid-area: name;
     font-weight: 700;
-  }
-  
-  .advantage__description {
+`
+
+export const AdvantageDescription = styled(P)`
     grid-area: description;
     padding: 20px 0px 0px 0px;
     margin: 0px;
-  }
-  
+`

@@ -1,26 +1,26 @@
 import Title from "./../../ui/title/title";
-import "./style.css";
+import { StyledAdvantages, AdvantagesList, AdvantagesButton } from "./styles";
+import { Li } from '../../styled';
 import Advantage from "../../ui/advantage/advantage";
 import advantagesList from "../../../mocks/advantages";
-import Button from "/src/components/ui/button/button";
 
 function Advantages() {
   return (
-    <section className="advantages">
+    <StyledAdvantages className="advantages">
       {advantagesList?.length ? (
         <>
-          <Title>Почему фермерские продукты лучше?</Title>
-          <ul className="advantages__advantages-list advantages-list">
+          <Title as="h2" $marginBottom="64">Почему фермерские продукты лучше?</Title>
+          <AdvantagesList>
             {advantagesList.map((advantage) => (
-              <li className="advantages-list__item" key={advantage.id}>
+              <Li key={advantage.id}>
                 <Advantage {...advantage} />
-              </li>
+              </Li>
             ))}
-          </ul>
+          </AdvantagesList>
         </>
       ) : null}
-      <Button>Купить</Button>
-    </section>
+      <AdvantagesButton>Купить</AdvantagesButton>
+    </StyledAdvantages>
   );
 }
 

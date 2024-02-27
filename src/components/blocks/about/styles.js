@@ -1,4 +1,6 @@
-.about {
+import styled from "styled-components";
+import {P, Section, Img} from '../../styled';
+export const StyledAbout = styled(Section)`
     display: flex;
     position: relative;
     padding-left: 90px;
@@ -9,27 +11,27 @@
     align-items: center;
     z-index: 1;
     box-sizing: border-box;
-  }
-  
-  .about__wrapper {
+`;
+
+export const StyledAboutWrapper = styled.div`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     position: relative;
     min-width: 650px;
     z-index: 3;
-  }
-  
-  .about__text {
+`;
+
+export const Text = styled(P)`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     margin-top: 20px;
     padding-right: 122px;
     margin-bottom: 40px;
-  }
-  
-  .about__img {
+`;
+
+export const StyledAboutImg = styled(Img)`
     position: absolute;
     top: 0;
     bottom: 0;
@@ -39,5 +41,4 @@
     width: 446px;
     height: 446px;
     margin: auto;
-  }
-  
+`

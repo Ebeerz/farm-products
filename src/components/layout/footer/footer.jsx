@@ -1,11 +1,11 @@
 import Logo from "/src/components/ui/logo/logo";
-import "./style.css";
+import { StyledFooter } from "./styles";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <StyledFooter className="footer">
       <Logo />
-    </footer>
+    </StyledFooter>
   );
 }
 

@@ -1,16 +1,16 @@
 import Header from "/src/components/layout/header/header";
 import Footer from "/src/components/layout/footer/footer";
 import MainPage from "/src/components/pages/main-page/main-page";
-import "./style.css";
+import { StyledPageWrapper } from "./styles";
 
 // Обёртка для контента страниц
 function PageWrapper() {
   return (
     <>
       <Header />
-      <main className="page-wrapper__main">
+      <StyledPageWrapper>
         <MainPage />
-      </main>
+      </StyledPageWrapper>
       <Footer />
     </>
   );

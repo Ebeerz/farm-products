@@ -1,11 +1,12 @@
-import "./style.css";
+import { Text, StyledLogo } from "./styles";
+
 
 function Logo() {
   return (
-    <a href="/" className="logo__link">
-      <img src={"assets/logo.svg"} alt="logo" />
-      <span className="logo__text">Фермерские продукты</span>
-    </a>
+    <StyledLogo href="/">
+      <img alt="logo" src="../../../../public/assets/logo.svg" />
+      <Text>Фермерские продукты</Text>
+    </StyledLogo>
   );
 }
 
