@@ -7,4 +7,5 @@ export const StyledPageWrapper = styled.main`
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 80px;
 `

@@ -15,9 +15,7 @@ export const StyledAdvantage = styled.div`
     min-height: 197px;
     margin: 0;
     padding: 20px;
-    /* background-color: #E1EDCE; */
     background-color: ${(props) => props.$bgColor};
-    
 `
 
 export const AdvantageImg = styled.img`
@@ -30,7 +28,7 @@ export const AdvantageType = styled.span`
     width: fit-content;
     box-sizing: content-box;
     padding: 0px 10px 0px 10px;
-    color: #fff;
+    color: ${(props) => props.theme.colorWhite};
     font-size: 14px;
     background-color: ${(props) => props.$bgColor};
 `
